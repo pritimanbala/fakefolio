@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     gsap.set(".split-overlay .outro-title .char", {
-        x: isMobile ? "-3rem" : "-8rem",
+        x: isMobile ? "1rem" : "-4rem", //here
         fontSize: isMobile ? "8rem" : "14rem",
         fontWeight: "500",
     });
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .to(
         ".preloader .intro-title .first-char",
         {
-            x: isMobile ? "7.5rem" : "7rem",
+            x: isMobile ? "11.5rem" : "11rem",  //here
             y: isMobile ? "-1rem" : "-2.75rem",
             fontWeight: "900",
             scale: 0.75,
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ).to(
         ".preloader .outro-title .char",
         {
-            x: isMobile ? "-3rem" : "-8rem",
+            x: isMobile ? "1rem" : "-4rem", //here
             fontSize: isMobile ? "6rem" : "14rem",
             fontWeight: "500",
             duration: 0.75,

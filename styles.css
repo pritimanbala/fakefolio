@@ -9,7 +9,9 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
-    width: 100vw;
+    width: 100%;
+    overflow-x: hidden;
+
 }
 
 img {
@@ -23,6 +25,9 @@ h1{
     font-size: 6rem;
     font-weight: 600;
     line-height: 1;
+    /* white-space: nowrap; */
+    word-break: keep-all;
+    hyphens: none;
 }
 
 p{
@@ -92,7 +97,7 @@ p{
     width: 100%;
     height: 100%;
     display: flex;
-    min-width: 100svh;
+    min-width: 100vw;
     flex-direction: column;
     justify-content: space-between;
     clip-path: polygon(0 48%, 0 48%, 0 52%, 0 52%);
@@ -126,6 +131,7 @@ nav, footer{
 .card{
     position: absolute;
     width: 30%;
+    max-width: 400px;
     height: 70%;
     display: flex;
     transform: translate(-50%, -50%);
@@ -181,6 +187,10 @@ nav, footer{
         width: 90%;
         margin: 0 auto;
         
+    }
+    .outro-title {
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
